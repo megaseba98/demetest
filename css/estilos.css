@@ -1,8 +1,6 @@
 /*
 font-family: 'Source Sans Pro', sans-serif;
 */
-
-
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +8,6 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*----------- NAV BAR ------------*/
-
 .iconos_redes{
     width: 20px;
     margin: 10px 5px;
@@ -19,7 +16,12 @@ font-family: 'Source Sans Pro', sans-serif;
 .iconos_redes:hover{
     transform: scale(1.1);
 }
+
+.logo_nav:hover{
+    transform: scale(1.1);
+}
 /*--------------------------------*/
+
 
 /*----------- BANNER ------------*/
 .banner{
@@ -35,6 +37,8 @@ font-family: 'Source Sans Pro', sans-serif;
     position: absolute;
     left: 50%;
     top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     padding: 20px;
     width: 40%;
@@ -45,11 +49,14 @@ font-family: 'Source Sans Pro', sans-serif;
     border-radius: 20px;
 }
 
+
 @media all and (max-width: 768px){
     .caja{
     position: absolute;
     left: 50%;
     top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     padding: 20px;
     width: 80%;
@@ -64,74 +71,70 @@ font-family: 'Source Sans Pro', sans-serif;
 .caja_p{
     font-size: 20px;
 }
-
-
 /*--------------------------------*/
 
-/*----------- NOSOTROS ------------*/
-/*#nosotros{
-    height: 100vh;
-    padding-top: 10vh;
-}*/
 
+/*----------- NOSOTROS ------------*/
 .nosotros_cards{
     padding: 10px;
     background-color: /*#faf2d7;*/ #EFEEEB;
 }
 /*--------------------------------*/
+
+
 /*----------- PROMOCIONES ------------*/
-
-/*#promociones{
-    height: 100vh;
-    padding-top: 10vh;
-}*/
-
 .promos{
     padding: 10px;
     background-color: /*#faf2d7;*/#EFEEEB;
 }
 /*--------------------------------*/
 
+/*----------- CONTACTO ------------*/
 
+.banner_cont{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/91368.jpg);
+}
+
+
+.form_box{
+    position: absolute;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 20px;
+}
+
+#form{
+
+}
+
+
+
+
+/*--------------------------------*/
 
 .card:hover{
     transform: scale(1.03);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*----------FOOTER--------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.hero{
-    background-image: url(../img/hero.jpg);
-    height: 100vh;
-    background-size: cover;
-    padding-top: 30vh;
+.footer{
+    height: 30vh;
+    padding: 30px;
+    background-color: black;
     text-align: center;
+    color: whitesmoke;
 }
 
-.hero_titulo{
-    font-size: 80px;
-    padding: 5px
-}
-
-.hero_texto{
-    font-size: 50px;
-}
-*/
-
-
-
+.footer ul{
+    list-style: none;
+}   
